@@ -1,11 +1,42 @@
-
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "./ui/button";
+import { PenBox } from "lucide-react";
 
 const Header = () => {
   return (
-    <div>
-      Header
-    </div>
-  )
-}
+    <header className="container mx-auto">
+      <nav className="py-6 flex justify-between items-center">
+        <Link href="/" className="flex items-center space-x-2">
+          <Image
+            src={"/file.svg"}
+            alt="Syncro"
+            width={200}
+            height={50}
+            className="h-10 w-auto object-contain"
+          />
+          <span>Syncro</span>
+        </Link>
 
-export default Header
+        <div className="flex items-center gap-3">
+          <Link href="/project/create">
+            <Button>
+              <PenBox size={18} />
+              <span>Create Project</span>
+            </Button>
+          </Link>
+          <SignedOut>
+            <SignInButton />
+          </SignedOut>
+
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
