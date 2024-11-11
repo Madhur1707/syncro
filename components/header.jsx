@@ -1,8 +1,9 @@
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, SignInButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { PenBox } from "lucide-react";
+import UserMenu from "./user.menu";
 
 const Header = () => {
   return (
@@ -27,11 +28,13 @@ const Header = () => {
             </Button>
           </Link>
           <SignedOut>
-            <SignInButton />
+            <SignInButton forceRedirectUrl="/onboarding">
+              <Button variant="outline">Login</Button>
+            </SignInButton>
           </SignedOut>
 
           <SignedIn>
-            <UserButton />
+            <UserMenu />
           </SignedIn>
         </div>
       </nav>
