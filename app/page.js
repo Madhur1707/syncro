@@ -35,7 +35,7 @@ export default function Home() {
     <div className="min-h-screen ">
       {/* Hero Section  */}
       <section className="container mx-auto py-20 text-center">
-        <h1 className="text-4xl font-sans sm:text-3xl lg:text-4xl font-semibold text-black pb-6 flex flex-col">
+        <h1 className="text-4xl font-sans sm:text-3xl lg:text-4xl font-semibold text-gray-700 pb-6 flex flex-col">
           Your Collaborative Workspace for Streamlined Project Management <br />
           <span className="flex items-center mx-auto gap-5 sm:gap-4">
             with{" "}
@@ -49,7 +49,7 @@ export default function Home() {
             <h2 className="text-sky-400 font-serif text-4xl">Syncro</h2>
           </span>
         </h1>
-        <p className="text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
+        <p className="text-xl text-gray-600 font-serif mb-10 max-w-3xl mx-auto">
           Syncro simplifies complex project management by bringing clarity and
           efficiency to every stage of development.
         </p>
@@ -67,19 +67,19 @@ export default function Home() {
 
       <section id="feature" className="bg-slate-50 py-1 px-5">
         <div className="container mx-auto">
-          <h3 className="text-2xl font-bold mb-12 text-center ">
+          <h2 className="scroll-m-20 border-b text-center pb-2 text-3xl font-semibold tracking-tight first:mt-0">
             Key Features{" "}
-          </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
             {features.map((feature, index) => {
               return (
                 <Card key={index}>
                   <CardContent className="pt-6">
                     <feature.icon className="h-12 w-12 mb-4 text-sky-400" />
-                    <h4 className="text-xl font-semibold mb-2">
+                    <h4 className="text-xl font-semibold mb-2 font-sans">
                       {feature.title}
                     </h4>
-                    <p className="text-gray-600">{feature.desc}</p>
+                    <p className="text-gray-600 font-serif">{feature.desc}</p>
                   </CardContent>
                 </Card>
               );
@@ -90,18 +90,18 @@ export default function Home() {
 
       <section className=" py-20">
         <div className="container mx-auto">
-          <h3 className="text-2xl font-bold mb-12 text-center ">
+          <h2 className="scroll-m-20 border-b text-center pb-2 text-3xl font-semibold tracking-tight first:mt-0">
             Trusted By Industry Leaders
-          </h3>
+          </h2>
           <CompanyCarousel />
         </div>
       </section>
 
       <section className=" py-15 px-5">
         <div className="container mx-auto">
-          <h3 className="text-2xl font-bold mb-12 text-center ">
+          <h2 className="scroll-m-20 border-b text-center pb-2 text-3xl font-semibold tracking-tight first:mt-0">
             Frequently Asked Questions
-          </h3>
+          </h2>
           <Accordion type="single" collapsible className="w-full">
             {faq.map((faqs, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
