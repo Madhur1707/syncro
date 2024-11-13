@@ -1,0 +1,30 @@
+[
+  {
+    "question": "What is Syncro?",
+    "answer": "Syncro is a project management tool designed to help teams track tasks, manage projects, and collaborate efficiently, similar to Jira."
+  },
+  {
+    "question": "How do I create a new project in Syncro?",
+    "answer": "To create a new project, navigate to the 'Projects' section, click on 'Create Project', fill out the required details, and hit 'Create'."
+  },
+  {
+    "question": "Can I assign tasks to team members?",
+    "answer": "Yes, you can assign tasks to team members by selecting the task, clicking 'Assign', and choosing a team member from the list."
+  },
+  {
+    "question": "How do I set up task dependencies?",
+    "answer": "To set up task dependencies, go to the task details and use the 'Dependencies' section to link it to other tasks."
+  },
+  {
+    "question": "What types of reports can Syncro generate?",
+    "answer": "Syncro can generate various reports such as project progress, team performance, and sprint summaries to help analyze workflow and efficiency."
+  },
+  {
+    "question": "Is there a mobile app for Syncro?",
+    "answer": "Yes, Syncro offers a mobile app available on iOS and Android to manage tasks and projects on the go."
+  },
+  {
+    "question": "How do I integrate Syncro with other tools?",
+    "answer": "You can integrate Syncro with other tools through the 'Integrations' section in the settings. Syncro supports integrations with popular tools like Slack, GitHub, and Trello."
+  }
+]
