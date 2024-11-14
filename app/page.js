@@ -1,7 +1,13 @@
 import CompanyCarousel from "@/components/company-carousel";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { BarChart, ChevronRight, Layout, Workflow } from "lucide-react";
+import {
+  ArrowRight,
+  BarChart,
+  ChevronRight,
+  Layout,
+  Workflow,
+} from "lucide-react";
 import faq from "@/data/faq";
 import Link from "next/link";
 import {
@@ -114,6 +120,24 @@ export default function Home() {
               </AccordionItem>
             ))}
           </Accordion>
+        </div>
+      </section>
+
+      <section className=" py-12 text-center px-5 mt-5 bg-slate-100">
+        <div className="container mx-auto">
+          <h2 className="scroll-m-20 border-b text-center pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+            Ready to Transform Your Workflow
+          </h2>
+          <p className="text-2xl mt-5 font-sans text-gray-700">
+            {" "}
+            Syncro simplifies complex project management by bringing clarity and
+            efficiency to every stage of development.
+          </p>
+          <Link href="/onboarding">
+            <Button size="lg" className="animate-bounce mt-8">
+              Start for Free <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
     </div>

@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
+import Footer from "@/components/footer";
 // import { dark } from "@clerk/themes";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,11 +29,7 @@ export default function RootLayout({ children }) {
           <ThemeProvider attribute="class" defaultTheme="light">
             <Header />
             <main className="min-h-screen">{children}</main>
-            <footer className=" bottom-0 left-0 w-full  text-black py-2">
-              <div className="container mx-auto px-4 py-10 text-center">
-                Syncro © 2024
-              </div>
-            </footer>
+            <Footer />
           </ThemeProvider>
         </body>
       </html>
