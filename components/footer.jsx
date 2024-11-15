@@ -2,7 +2,7 @@ import { Github, Linkedin, User2, X } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="text-black   py-12 m-5">
+    <footer className="text-black  py-12 mb-0">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 mt-3 gap-6 ">
         <div className="flex flex-col items-center md:items-start">
           <span className="text-2xl font-bold mb-2">Who We Are?</span>
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mt-6 text-center text-gray-500">
+      <div className="mt-6 mb-0 text-center text-gray-500">
         © 2024 Syncro | All rights reserved.
       </div>
     </footer>
